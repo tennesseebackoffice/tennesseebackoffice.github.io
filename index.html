@@ -5,24 +5,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tennessee Back Office | Bookkeeping Services</title>
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
 <style>
+/* Base styles */
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f4f6f9;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff5f8; /* soft light pink background */
     color: #333;
 }
 
+/* Header */
 header {
-    background-color: #1f3c88;
-    color: white;
-    padding: 60px 20px;
+    background-color: #f8d3d8; /* slightly darker pink */
+    color: #4a2c2a; /* warm brown for contrast */
     text-align: center;
+    padding: 80px 20px;
 }
 
 header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
     margin: 0;
-    font-size: 36px;
 }
 
 header p {
@@ -30,57 +36,86 @@ header p {
     margin-top: 10px;
 }
 
+/* Sections */
 section {
-    padding: 50px 20px;
     max-width: 1000px;
     margin: auto;
+    padding: 50px 20px;
 }
 
 h2 {
-    color: #1f3c88;
+    color: #4a2c2a;
+    font-family: 'Playfair Display', serif;
     margin-bottom: 20px;
+    text-align: center;
 }
 
+/* Services grid */
 .services {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    text-align: center;
 }
 
 .service-box {
     background: white;
     padding: 25px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 
 .service-box h3 {
     margin-top: 0;
+    color: #c94f6d;
 }
 
+/* CTA Section */
 .cta {
-    background-color: #1f3c88;
-    color: white;
+    background-color: #f8d3d8;
     text-align: center;
-    padding: 50px 20px;
+    padding: 60px 20px;
+    border-radius: 12px;
 }
 
 .cta a {
     display: inline-block;
-    background: white;
-    color: #1f3c88;
-    padding: 12px 25px;
-    margin-top: 20px;
+    background-color: #c94f6d;
+    color: white;
+    padding: 15px 30px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 8px;
+    margin-top: 20px;
+    transition: background 0.3s ease;
 }
 
+.cta a:hover {
+    background-color: #a53b54;
+}
+
+/* Footer */
 footer {
     text-align: center;
-    padding: 20px;
-    background: #e9ecef;
+    padding: 25px;
     font-size: 14px;
+    color: #4a2c2a;
+}
+
+/* Responsive spacing */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 32px;
+    }
+    section {
+        padding: 30px 15px;
+    }
 }
 </style>
 </head>
@@ -89,54 +124,41 @@ footer {
 
 <header>
     <h1>Tennessee Back Office</h1>
-    <p>Reliable, Accurate Bookkeeping for Small Businesses & Healthcare Practices</p>
+    <p>Professional Bookkeeping Services with Accuracy & Care</p>
 </header>
 
 <section>
-    <h2>About</h2>
-    <p>
-        Tennessee Back Office provides dependable bookkeeping services designed to help small businesses stay organized, compliant, and financially confident. With a background in state government accounting, audit, and healthcare finance, we bring accuracy, structure, and data-driven insight to your financial records.
+    <h2>About Us</h2>
+    <p style="text-align:center;">
+        Tennessee Back Office helps small businesses and healthcare practices maintain clean, accurate, and organized financial records. With experience in state government accounting, auditing, and healthcare finance, we bring clarity and confidence to your books.
     </p>
 </section>
 
 <section>
-    <h2>Services</h2>
+    <h2>Our Services</h2>
     <div class="services">
         <div class="service-box">
             <h3>Monthly Bookkeeping</h3>
-            <p>Transaction categorization, account reconciliation, and clean financial records you can rely on.</p>
+            <p>Transaction categorization, reconciliations, and organized financial records you can trust.</p>
         </div>
-
         <div class="service-box">
             <h3>Accounts Payable & Receivable</h3>
-            <p>Invoice tracking, vendor management, and payment monitoring to improve cash flow.</p>
+            <p>Manage invoices, track payments, and keep your cash flow in check.</p>
         </div>
-
         <div class="service-box">
             <h3>Financial Reporting</h3>
-            <p>Clear monthly Profit & Loss and Balance Sheet reports to help you understand your numbers.</p>
+            <p>Clear Profit & Loss and Balance Sheet reports to help you make informed decisions.</p>
         </div>
-
         <div class="service-box">
-            <h3>Cleanup & Catch-Up Work</h3>
-            <p>Behind on your books? We’ll organize, reconcile, and get you back on track.</p>
+            <h3>Cleanup & Catch-Up</h3>
+            <p>Behind on your books? We organize, reconcile, and get you back on track efficiently.</p>
         </div>
     </div>
 </section>
 
-<section>
-    <h2>Why Choose Us</h2>
-    <ul>
-        <li>Prior State of Tennessee accounting experience</li>
-        <li>Strong internal control and compliance background</li>
-        <li>Data-driven reporting and financial clarity</li>
-        <li>Confidential, professional, and dependable service</li>
-    </ul>
-</section>
-
 <section class="cta">
     <h2>Ready to Simplify Your Books?</h2>
-    <p>Let’s discuss how we can support your business.</p>
+    <p>Contact us today to schedule a consultation and take the stress out of bookkeeping.</p>
     <a href="mailto:DataDrivenStephanie@outlook.com">Schedule a Consultation</a>
 </section>
 
